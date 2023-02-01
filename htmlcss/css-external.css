@@ -1,0 +1,10 @@
+/*External CSS*/
+body {
+    background-color: grey;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+    color: black;
+}
