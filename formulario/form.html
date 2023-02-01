@@ -55,7 +55,7 @@
             </tr>
             <tr>
                 <td><label for="id_birthdate">Birthdate</label></td>
-                <td><input type="date" name="birthdate" id="id_birthdate"></td>
+                <td><input type="date" min="1900-01-01" max="2023-01-01" name="birthdate" id="id_birthdate"></td>
             </tr>
             <tr>
                 <td><label for="id_placebirth">Place of birthdate:</label></td>
@@ -108,7 +108,7 @@
             </tr>
             <tr>
                 <td><label for="id_cv">C.V. (file):</label></td>
-                <td><input type="file" name="cv" id="id_cv"></td>
+                <td><input type="file" maxlength="3" minlength="3" name="cv" id="id_cv"></td>
             </tr>
         </table>
         <br>
@@ -170,6 +170,7 @@
                 <td><textarea name="other" id="id_other" cols="50" rows="10">Write here any comment ...</textarea></td>
             </tr>
         </table>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
