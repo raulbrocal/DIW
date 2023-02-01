@@ -15,11 +15,13 @@
             <legend><b>Personal Identification</b></legend>
             <tr>
                 <td><label for="id_fname">First Name:</label></td>
-                <td><input type="text" name="fname" id="id_fname"></td>
+                <td><input type="text" name="fname" placeholder="Raul" pattern="[a-zA-Z]{1,1}"
+                        title="Name should only contain letters." id="id_fname"></td>
             </tr>
             <tr>
                 <td><label for="id_sname">Surname:</label></td>
-                <td><input type="text" name="sname" id="id_sname"></td>
+                <td><input type="text" name="sname" placeholder="Brocal" pattern="[a-zA-Z]{1,1}"
+                        title="Surname should only contain letters." id="id_sname"></td>
             </tr>
             <tr>
                 <td><label for="id_sex">Sex:</label></td>
@@ -47,7 +49,7 @@
             </tr>
             <tr>
                 <td><label for="id_phone">Phone:</label></td>
-                <td><input type="number" name="phone" id="id_phone"></td>
+                <td><input type="number" name="phone" id="id_phone" placeholder="+34 "></td>
             </tr>
             <tr>
                 <td><label for="id_mobile">Mobile:</label></td>
@@ -87,8 +89,9 @@
                 <td><input type="number" name="employeenumber" id="id_employeenumber"></td>
             </tr>
             <tr>
-                <td><label for="id_user">User:</label></td>
-                <td><input type="text" name="user" id="id_user"></td>
+                <td><label for="id_username">User:</label></td>
+                <td><input type="text" name="username" placeholder="Username" pattern="[a-z]{1,15}"
+                        title="Username should only contain lowercase letters." id="id_username"></td>
             </tr>
             <tr>
                 <td><label for="id_password">Password:</label></td>
@@ -108,14 +111,24 @@
             </tr>
             <tr>
                 <td><label for="id_cv">C.V. (file):</label></td>
-                <td><input type="file" maxlength="3" minlength="3" name="cv" id="id_cv"></td>
+                <td><input type="file" name="cv" id="id_cv"></td>
             </tr>
         </table>
         <br>
         <table>
             <legend><b>Education</b></legend>
             <tr>
-                <td>?</td>
+                <td><label for="id_educationlvl">Level of education</label></td>
+                <td>
+                    <input type="checkbox" name="elementary" id="id_elementary">Elementary</input>
+                    <input type="checkbox" name="secondary" id="id_secondary">Secondary
+                    </input>
+                    <input type="checkbox" name="highschool" id="id_catalan">High School
+                    </input>
+                    <input type="checkbox" name="degree" id="id_degree">Degree
+                    </input>
+                    <input type="checkbox" name="master" id="is_master">Master's degree</input>
+                </td>
             </tr>
             <tr>
                 <td><label for="id_languages">Languages:</label></td>
@@ -144,7 +157,7 @@
             </tr>
             <tr>
                 <td><label for="id_cvvcvc">CVV / CVC:</label></td>
-                <td><input type="number" name="cvvcvc" id="id_cvvcvc"></td>
+                <td><input type="number" name="cvvcvc" id="id_cvvcvc" pattern="[0-9]{3}"></td>
             </tr>
             <tr>
                 <td><label for="id_expiration">Expiration date:</label></td>
