@@ -16,62 +16,69 @@
             <tr>
                 <td><label for="id_fname">First Name:</label></td>
                 <td><input type="text" name="fname" placeholder="Raul" pattern="[a-zA-Z]{1,1}"
-                        title="Name should only contain letters." id="id_fname"></td>
+                        title="Name should only contain letters." id="id_fname" required="required" autofocus></td>
             </tr>
             <tr>
                 <td><label for="id_sname">Surname:</label></td>
                 <td><input type="text" name="sname" placeholder="Brocal" pattern="[a-zA-Z]{1,1}"
-                        title="Surname should only contain letters." id="id_sname"></td>
+                        title="Surname should only contain letters." required="required" id="id_sname"></td>
             </tr>
             <tr>
                 <td><label for="id_sex">Sex:</label></td>
                 <td>
                     <input type="radio" name="sex" id="id_sex">Male</input>
                     <input type="radio" name="sex" id="id_sex">Female</input>
-                    <input type="radio" name="sex" id="id_sex">Other</input>
+                    <input type="radio" name="sex" id="id_sex" checked>Other</input>
                 </td>
             </tr>
             <tr>
                 <td><label for="id_address">Address:</label></td>
-                <td><input type="text" name="address" id="id_address"></td>
+                <td><input type="text" name="address" id="id_address" placeholder=" St Harris, 1234 NW Bobcat Lane"
+                        required="required"></td>
             </tr>
             <tr>
                 <td><label for="id_pcode">Postal code:</label></td>
-                <td><input type="number" name="pcode" id="id_pcode"></td>
+                <td><input type="number" name="pcode" placeholder="07150" maxlength="5" required="required"
+                        id="id_pcode"></td>
             </tr>
             <tr>
                 <td><label for="id_documentation">DNI / Passport</label></td>
-                <td><input type="text" name="documentaion" id="id_documentation"></td>
+                <td><input type="text" name="documentaion" required="required" placeholder="12345678X"
+                        pattern="^[0-9]{8}[A-Z]$" id="id_documentation"></td>
             </tr>
             <tr>
                 <td><label for="id_email">E-mail:</label></td>
-                <td><input type="email" name="email" id="id_email"></td>
+                <td><input type="email" name="email" placeholder="name@hosting.com" required="required" id="id_email">
+                </td>
             </tr>
             <tr>
                 <td><label for="id_phone">Phone:</label></td>
-                <td><input type="number" name="phone" id="id_phone" placeholder="+34 "></td>
+                <td><input type="number" name="phone" id="id_phone" placeholder="+34 654321000"></td>
             </tr>
             <tr>
                 <td><label for="id_mobile">Mobile:</label></td>
-                <td><input type="number" name="mobile" id="id_mobile"></td>
+                <td><input type="number" name="mobile" id="id_mobile" placeholder="971 234 567"></td>
             </tr>
             <tr>
                 <td><label for="id_birthdate">Birthdate</label></td>
-                <td><input type="date" min="1900-01-01" max="2023-01-01" name="birthdate" id="id_birthdate"></td>
+                <td><input type="date" min="1900-01-01" max="2023-01-01" name="birthdate" required="required"
+                        id="id_birthdate"></td>
             </tr>
             <tr>
                 <td><label for="id_placebirth">Place of birthdate:</label></td>
-                <td><input type="text" name="placebirth" id="id_placebirth"></td>
+                <td><input type="text" name="placebirth" placeholder="123 State Street Apt. 100 W.DC"
+                        required="required" id="id_placebirth"></td>
             </tr>
             <tr>
                 <td><label for="id_countrybirth">Country of birthdate:</label></td>
-                <td><input type="text" name="countrybirth" id="id_countrybirth"></td>
+                <td><input type="text" name="countrybirth" placeholder="Utha" required="required" id="id_countrybirth">
+                </td>
             </tr>
             <tr>
                 <td><label for="id_status">Marital status:</label></td>
-                <td><select name="status" id="id_status">
-                        <option value="married">Married</option>
+                <td><select name="status" required="required" id="id_status">
                         <option value="single">Single</option>
+                        <option value="married">Married</option>
                         <option value="divorced">Divorced</option>
                         <option value="widowed">Widowed</option>
                     </select></td>
@@ -82,36 +89,37 @@
             <legend><b>Employee Identification</b></legend>
             <tr>
                 <td><label for="id_company">Company:</label></td>
-                <td><input type="text" name="company" id="id_company"></td>
+                <td><input type="text" name="company" required="required" id="id_company"></td>
             </tr>
             <tr>
                 <td><label for="id_employeenumber">Employee number:</label></td>
-                <td><input type="number" name="employeenumber" id="id_employeenumber"></td>
+                <td><input type="number" name="employeenumber" maxlength="3" minlength="2" placeholder="123" required="required" id="id_employeenumber"></td>
             </tr>
             <tr>
                 <td><label for="id_username">User:</label></td>
                 <td><input type="text" name="username" placeholder="Username" pattern="[a-z]{1,15}"
-                        title="Username should only contain lowercase letters." id="id_username"></td>
+                        title="Username should only contain lowercase letters." required="required" id="id_username">
+                </td>
             </tr>
             <tr>
                 <td><label for="id_password">Password:</label></td>
-                <td><input type="password" name="password" id="id_password"></td>
+                <td><input type="password" name="password" required="required" id="id_password"></td>
             </tr>
             <tr>
                 <td><label for="id_department">Department:</label></td>
-                <td><input type="text" name="department" id="id_department"></td>
+                <td><input type="text" name="department" required="required" id="id_department"></td>
             </tr>
             <tr>
                 <td><label for="id_startdate">Start date:</label></td>
-                <td><input type="date" name="startdate" id="id_startdate"></td>
+                <td><input type="date" name="startdate" required="required" id="id_startdate"></td>
             </tr>
             <tr>
                 <td><label for="id_workh">Work hours:</label></td>
-                <td><input type="time" name="workh" id="id_workh"></td>
+                <td><input type="time" name="workh" required="required" id="id_workh"></td>
             </tr>
             <tr>
                 <td><label for="id_cv">C.V. (file):</label></td>
-                <td><input type="file" name="cv" id="id_cv"></td>
+                <td><input type="file" name="cv" required="required" id="id_cv"></td>
             </tr>
         </table>
         <br>
@@ -149,19 +157,26 @@
             <legend><b>Payment method</b></legend>
             <tr>
                 <td><label for="id_cardtype">Card type:</label></td>
-                <td><input type="text" name="cardtype" id="id_cardtype"></td>
+                <td><select name="cardtype" required="required" id="id_cardtype">
+                        <option value="visa">VISA</option>
+                        <option value="AM">American Express</option>
+                        <option value="MC">Master Card</option>
+                        <option value="M">Maestro</option>
+                    </select></td>
             </tr>
             <tr>
                 <td><label for="id_cardnumber">Card number:</label></td>
-                <td><input type="number" name="cardnumber" id="id_cardnumber"></td>
+                <td><input type="number" autocomplete="off" novalidate name="cardnumber" required="required"
+                        placeholder="1234 5678 9012 1234" pattern="^[0-9]{16}$" id="id_cardnumber"></td>
             </tr>
             <tr>
-                <td><label for="id_cvvcvc">CVV / CVC:</label></td>
-                <td><input type="number" name="cvvcvc" id="id_cvvcvc" pattern="[0-9]{3}"></td>
+                <td><label for="id_cvv">CVV / CVC:</label></td>
+                <td><input type="number" name="cvv" placeholder="123" required="required" id="id_cvv" max="999"></td>
             </tr>
             <tr>
                 <td><label for="id_expiration">Expiration date:</label></td>
-                <td><input type="date" name="expiration" id="id_expiration"></td>
+                <td><input type="month" name="expiration" placeholder="2023-01" min="1900-12" max="2023-02"
+                        required="required" id="id_expiration"></td>
             </tr>
         </table>
         <br>
@@ -169,11 +184,11 @@
             <legend><b>Individual preferences</b></legend>
             <tr>
                 <td><label for="id_color">Color:</label></td>
-                <td><input type="color" name="color" id="id_color"></td>
+                <td><input type="color" name="color" required="required" id="id_color"></td>
             </tr>
             <tr>
                 <td><label for="id_scm">Social media:</label></td>
-                <td><input type="text" name="scm" id="id_scm"></td>
+                <td><input type="url" name="scm" required="required" id="id_scm"></td>
             </tr>
         </table>
         <br>
@@ -183,7 +198,8 @@
                 <td><textarea name="other" id="id_other" cols="50" rows="10">Write here any comment ...</textarea></td>
             </tr>
         </table>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Submit">
+        <input class="boton2" type="reset" value="Reset">
     </form>
 </body>
 
