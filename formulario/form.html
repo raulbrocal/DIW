@@ -15,12 +15,12 @@
             <legend><b>Personal Identification</b></legend>
             <tr>
                 <td><label for="id_fname">First Name:</label></td>
-                <td><input type="text" name="fname" placeholder="Raul" pattern="[a-zA-Z]{1,1}"
+                <td><input type="text" name="fname" placeholder="Raul" pattern="[a-zA-Z]{2,20}"
                         title="Name should only contain letters." id="id_fname" required="required" autofocus></td>
             </tr>
             <tr>
                 <td><label for="id_sname">Surname:</label></td>
-                <td><input type="text" name="sname" placeholder="Brocal" pattern="[a-zA-Z]{1,1}"
+                <td><input type="text" name="sname" placeholder="Brocal" pattern="[a-zA-Z]{2,20}"
                         title="Surname should only contain letters." required="required" id="id_sname"></td>
             </tr>
             <tr>
@@ -44,7 +44,7 @@
             <tr>
                 <td><label for="id_documentation">DNI / Passport</label></td>
                 <td><input type="text" name="documentaion" required="required" placeholder="12345678X"
-                        pattern="^[0-9]{8}[A-Z]$" id="id_documentation"></td>
+                        pattern="[0-9]{8}[A-Z]" id="id_documentation"></td>
             </tr>
             <tr>
                 <td><label for="id_email">E-mail:</label></td>
@@ -167,7 +167,7 @@
             <tr>
                 <td><label for="id_cardnumber">Card number:</label></td>
                 <td><input type="number" autocomplete="off" novalidate name="cardnumber" required="required"
-                        placeholder="1234 5678 9012 1234" pattern="^[0-9]{16}$" id="id_cardnumber"></td>
+                        placeholder="1234 5678 9012 1234" pattern="[0-9]{16}" id="id_cardnumber"></td>
             </tr>
             <tr>
                 <td><label for="id_cvv">CVV / CVC:</label></td>
