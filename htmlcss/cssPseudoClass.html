@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo-Class</title>
+    <style>
+        body {
+            background-color: beige;
+            font-size: large;
+        }
+
+        a:link {
+            /*unvisited*/
+            text-decoration: none;
+        }
+
+        a:visited {
+            /*visited*/
+            color: red;
+        }
+
+        a:hover {
+            /*mouse over*/
+            color: pink;
+            text-decoration: underline;
+        }
+
+        a:active {
+            /*selected*/
+            color: blueviolet;
+        }
+
+        div.color:hover {
+            background-color: whitesmoke;
+        }
+
+        div.childLine::first-line {
+            color: white;
+        }
+
+        h2.childFirst span:first-child {
+            text-transform: uppercase;
+            color: black;
+        }
+
+        h2.oddEven span:nth-child(odd) {
+            text-transform: uppercase;
+            color: black;
+        }
+
+        h2.oddEven span:nth-child(even) {
+            text-transform: capitalize;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.iessonferrer.net/">www.iessonferrer.net</a>
+    <div class="color">
+        qwer asdf zxcv
+    </div>
+    <p></p>
+    <div class="childLine">qwertyuiop <br>
+        qwertyui <br>
+        qwertyuiop <br></div>
+    <h2 class="childFirst">poiu <span>qwerty</span> asdf <span>zcxv</span></h2>
+    <h2 class="oddEven">
+        <span>H</span>
+        <span>a</span>
+        <span>n</span>
+        <span>v</span>
+        <span>u</span>
+        <span>e</span>
+        <span>l</span>
+        <span>t</span>
+        <span>o</span>
+    </h2>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de CSS</title>
+    <style>
+        body {
+            background-color: gray;
+            font-size: large;
+            border: 5px solid white;
+            border-right: 5px solid black;
+            border-bottom: 5px solid black;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            border-bottom: 5px solid white;
+            margin: 25px;
+        }
+
+        h2.oddEven span:nth-child(odd) {
+            color: black;
+        }
+
+        h2.oddEven span:nth-child(even) {
+            color: whitesmoke;
+        }
+
+        div{
+            background-color: whitesmoke;
+            margin: 0 50px 50px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="oddEven">
+        <span>H</span><span>a</span><span>n</span>
+        <span>c</span><span>a</span><span>í</span><span>d</span><span>o</span>
+        <span>l</span><span>o</span><span>s</span>
+        <span>d</span><span>o</span><span>s</span>
+        <span>(</span><span>r</span><span>a</span><span>d</span><span>i</span><span>o</span>
+        <span>f</span><span>u</span><span>t</span><span>u</span><span>r</span><span>a</span><span>)</span>
+
+    </h2>
+    <div>
+        <p>Han caído los dos cual soldados fulminados al suelo.</p>
+        Y ahora están atrapados los dos en la misma prisión.
+        Vigilados por el ojo incansable del deseo voraz.
+        Sometidos a una insoportable tensión de silencio.
+    </div>
+    <div>
+        <p>Han caído los dos bajo el punto de vista exclusivo.</p>
+        Iniciando una guerra en que nadie pudo vencer jamás.
+        Ella sabe lo que el hombre espera sin haberlo aprendido
+        <p>Y él encuentra sentido al enigma que no le dejaba existir.</p>
+    </div>
+    <div>
+        <p>Antes eran dos barcos sin rumbo, hoy son dos marionetas que van.</p>
+        <p>Persiguiendo una luz cegadora por la línea del tiempo.</p>
+    </div>
+    <div>
+        <p>Han caído los dos en la boca de un dios tenebroso.</p>
+        <p>Que sonríe mostrando sus dientes de acero.</p>
+    </div>
+</body>
+
+</html>
