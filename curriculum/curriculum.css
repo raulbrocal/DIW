@@ -1,0 +1,17 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.content{
+    background-color: red;
+    height: 95vh;
+}
+div{
+    background-color: purple;
+}
+.information{
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    height: 5vh;
+}
