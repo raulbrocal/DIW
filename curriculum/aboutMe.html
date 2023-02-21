@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -21,33 +21,41 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="curriculum.css">
     <style>
-        .content{
+        .content {
             background-color: lightsalmon;
         }
-        .navbar-brand{
+
+        .navbar-brand {
             padding-right: 5px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        .carousel-item{
+
+        .carousel-item {
             border: 1px solid black;
         }
-        .separator{
+
+        .separator {
             height: 50%;
         }
-        #carouselExampleControls{
+
+        #carouselExampleControls {
             margin-top: 50%;
         }
-        .titulo{
-            background-color: white;
-            border: 1px black solid;
-            border-top-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            margin-top: 20%;
-            height: 15%;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-size: xx-large;
+
+        .trapecio {
+            margin: auto;
+            margin-top: 30px;
+            width: 250px;
+            height: 0px;
+            border-right: 60px solid transparent;
+            border-left: 60px solid transparent;
+            border-bottom: 100px solid white;
+        }
+
+        p.titulo {
+            padding-top: 100%;
+            font-size: x-large;
         }
     </style>
 </head>
@@ -71,8 +79,8 @@
                 <a class="navbar-brand" href="experience.html">WORK EXPERIENCE</a>
             </div>
         </nav>
-        <div class="flexbox titulo">
-            HOW AM I
+        <div class="flexbox trapecio">
+            <p class="titulo">HOW I AM</p>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
