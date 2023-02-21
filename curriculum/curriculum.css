@@ -32,3 +32,11 @@ a.navbar-brand {
     display: flex;
     justify-content: center;
 }
+
+nav:first-child{
+    padding: 10px 15px;
+}
+
+nav{
+    padding: 5px;
+}
