@@ -17,6 +17,7 @@ body {
 
 a.navbar-brand {
     font-size: 10px;
+    margin-right: 6px;
 }
 
 .material-symbols-outlined {
