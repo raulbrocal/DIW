@@ -33,6 +33,11 @@
 
         .carousel-item {
             border: 1px solid black;
+            background-color: aqua;
+            text-align: justify;
+            padding: 15px;
+            font-size: x-small;
+            height: 200px;
         }
 
         .separator {
@@ -40,21 +45,22 @@
         }
 
         #carouselExampleControls {
-            margin-top: 50%;
+            margin-top: 25%;
         }
 
-        .trapecio {
+        .oval-half-red {
             margin: auto;
             margin-top: 30px;
-            width: 250px;
-            height: 0px;
-            border-right: 60px solid transparent;
-            border-left: 60px solid transparent;
-            border-bottom: 100px solid white;
+            width: 75%;
+            height: 100px;
+            -moz-border-radius: 0 50% / 0 100%;
+            -webkit-border-radius: 0 50% / 0 100%;
+            border-radius: 0 50% / 0 100%;
+            border: 3px solid #555;
+            background-color: white;
         }
 
         p.titulo {
-            padding-top: 100%;
             font-size: x-large;
         }
     </style>
@@ -79,19 +85,32 @@
                 <a class="navbar-brand" href="experience.html">WORK EXPERIENCE</a>
             </div>
         </nav>
-        <div class="flexbox trapecio">
+        <div class="flexbox oval-half-red">
             <p class="titulo">HOW I AM</p>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <h1>Character</h1>
+                    <p>Robert Downey Jr. is, without a doubt, one of the most beloved and recognized terrible children
+                        from Hollywood.
+                        The son of a legend of the independent scene, he began as a cult actor, he became a troubled
+                        celebrity and was revived thanks to a blockbuster saga.
+                        The biography by Robert Downey Jr. is a movie and can be enjoyed on Orange TV.</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <h1>Important data</h1>
+                    <p>One of the reasons why Downey is such a beloved figure by the public is that It appears to be as
+                        in their papers.
+                        That is to say, a smart, funny guy, committed when he plays, but always from a certain ironic
+                        distance. Be more or less true, achieve that so difficult to transmit beyond the screen.</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <h1>About movies</h1>
+                    <p>In addition to dedicating his entire life to acting, his biography is also one of a movie.
+                        From become a cult actor for his reinvention as Iron Man in the highest-grossing saga of Marvel,
+                        going through various dramas and addiction problems.
+                        We review below how they were its beginnings and which films have marked its trajectory.</p>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

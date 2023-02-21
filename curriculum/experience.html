@@ -40,7 +40,13 @@
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
             border-radius: 50%;
-            background: white;
+            background-color: antiquewhite;
+            border: 1px solid brown;
+        }
+
+        .dropdown {
+            text-align: justify;
+            font-size: small;
         }
     </style>
 </head>
@@ -67,12 +73,94 @@
         <div class="flexbox titulo oval">
             WORK EXPERIENCE
         </div>
-        <div class="btn-group">
-            <a href="#" class="btn btn-primary">Link</a>
-            <a href="#" class="btn btn-primary">Link</a>
-            <a href="#" class="btn btn-primary">Link</a>
-            <a href="#" class="btn btn-primary">Link</a>
-            <a href="#" class="btn btn-primary">Link</a>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Actor
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body dropdown">Recognized by critics as one of the most talented and versatile
+                        actors
+                        of his generation. He was developing small roles and a fixed intervention on the Saturday Night
+                        Live show, until he managed to make a name for himself among the young stars of the eighties.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Movies
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body dropdown">In addition, he acted in Golpe al sueño americano (1987),
+                        Natural Born
+                        Killers (1994), Prodigious Youngsters (2000), Kiss Kiss Bang Bang (2005), Fur: An Imaginary
+                        Portrait of Diane (2006), Zodiac (2007), Iron Man (2008), Sherlock Holmes (2010) and Salidos de
+                        cuentas (2010), among others.
+                        In 2012, Downey reprized the role of Tony Stark in The Avengers.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Music
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body dropdown">The actor has sung on the soundtracks of some of his films,
+                        including:
+                        Chaplin, Too Much Sun, Two Girls and a Guy, Friends and Lovers, The Singing Detective, and Kiss
+                        Kiss Bang Bang. During 2001, he appeared in the music video for the Elton John song I Want Love.
+                        In 2004 he released a CD, The Futurist.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Languague Skills
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body dropdown">
+                        <ul>
+                            <li>Spanish - Native</li>
+                            <li>English - Fluent (CPE Level - C2 Certification, Common European Framework of Reference
+                                Languages)</li>
+                            <li>Adobe Workfront</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Technical Skills
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body dropdown">
+                        <ul>
+                            <li>Google Docs, Google Drive, Google Sheets, Google Sites</li>
+                            <li>Microsoft Excel, Microsoft Powerpoint, Microsoft Teams, Microsoft Word</li>
+                            <li>Adobe Workfront</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="information">
