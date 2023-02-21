@@ -61,8 +61,21 @@
                 <tr>
                     <td scope="row"></td>
                     <td>
-                        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Image" content='<img
-                            src="foto.jpeg" class="img-thumbnail">'>PHOTO</button>
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">PHOTO</button>
+
+                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive"
+                                aria-atomic="true">
+                                <div class="toast-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    <img src="foto.jpeg" class="img-thumbnail" alt="photo">
+                                </div>
+                            </div>
+                        </div>
+
                     </td>
                     <td></td>
                 </tr>
