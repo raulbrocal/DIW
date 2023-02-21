@@ -1,17 +1,20 @@
-body{
-    width: 100%;
+body {
+    width: 100vw;
     min-height: 100vh;
 }
-.content{
-    background-color: red;
+
+.content {
+    background-color: grey;
     height: 95vh;
 }
-div{
-    background-color: purple;
-}
-.information{
+
+.information {
     background-color: white;
     text-align: center;
     border: 2px solid black;
     height: 5vh;
+}
+
+a.navbar-brand {
+    font-size: 10px;
 }

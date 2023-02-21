@@ -16,16 +16,63 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="curriculum.css">
+    <style>
+        .content {
+            background-color: grey;
+        }
+
+        tr,
+        td {
+            width: 33%;
+            height: 200%;
+            background-color: black;
+            border: 1px solid white;
+        }
+
+        .btn {
+            height: 90px;
+        }
+
+        .flexbox {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .table {
+            margin: auto 0;
+        }
+    </style>
 </head>
 
 <body>
     <div class="text-center content">
-        <div class="btn-group">
-            <a href="#" class="btn btn-primary">Link</a>
-            <a href="#" class="btn btn-primary">Link</a>
-            <a href="#" class="btn btn-primary">Link</a>
-            <a href="#" class="btn btn-primary">Link</a>
+        <div>
+            <h1>CVC Robert Downey JR</h1>
         </div>
+        <br><br><br><br><br><br><br>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td scope="row"><a href="who.html" class="btn btn-primary flexbox">WHO I AM</a></td>
+                    <td></td>
+                    <td><a href="where.html" class="btn btn-primary flexbox">WHERE DO I COME FROM</a></td>
+                </tr>
+                <tr>
+                    <td scope="row"></td>
+                    <td>
+                        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Image" content='<img
+                            src="foto.jpeg" class="img-thumbnail">'>PHOTO</button>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row"><a href="aboutMe.html" class="btn btn-primary flexbox">HOW AM I</a></td>
+                    <td></td>
+                    <td><a href="experience.html" class="btn btn-primary flexbox">WORK EXPERIENCE</a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div class="information">
         Raúl Brocal Berral 2022-2023
