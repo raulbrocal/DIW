@@ -64,7 +64,20 @@
         <div class="titulo">
             CVC Robert Downey JR
         </div>
-        <button type="button" class="btn circulo position" id="liveAlertBtn">PHOTO</button>
+        <button type="button" class="btn circulo position" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">PHOTO</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="foto.jpeg" alt="PHOTO" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
         <table class="table">
             <tbody>
                 <tr>
@@ -81,6 +94,14 @@
     <div class="information flexbox">
         Raúl Brocal Berral 2022-2023
     </div>
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
 </body>
 
 </html>
