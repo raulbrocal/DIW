@@ -13,7 +13,7 @@
     <style>
         .titulo {
             margin: auto;
-            margin-bottom: 30px;
+            margin-bottom: 100px;
             background-color: white;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -26,53 +26,54 @@
 
         tr,
         td {
-            max-width: 33.33%;
-            background-color: black;
-            border: 1px solid white;
+            width: 50%;
         }
 
         .btn {
-            height: 90px;
+            height: 100px;
+            background-color: royalblue;
         }
 
         .table {
-            margin: auto 0;
+            margin: 0 auto;
+            width: 80%;
         }
 
         .circulo {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
             border-radius: 50%;
+            border: 1px solid black;
+            background-color: cornflowerblue;
+        }
+
+        .position {
+            position: absolute;
+            left: 35.75%;
+            top: 37%;
+            z-index: 1;
         }
     </style>
 </head>
 
 <body>
     <div class="text-center content">
+        <br><br>
         <div class="titulo">
             CVC Robert Downey JR
         </div>
+        <button type="button" class="btn circulo position" id="liveAlertBtn">PHOTO</button>
         <table class="table">
             <tbody>
                 <tr>
-                    <td scope="row"><a href="who.html" class="btn btn-primary flexbox">WHO I AM</a></td>
-                    <td></td>
-                    <td><a href="where.html" class="btn btn-primary flexbox">WHERE I COME FROM</a></td>
+                    <td scope="row"><a href="who.html" class="btn flexbox">WHO I AM</a></td>
+                    <td><a href="where.html" class="btn flexbox">WHERE I COME FROM</a></td>
                 </tr>
                 <tr>
-                    <td scope="row"></td>
-                    <td>
-                        <div id="liveAlertPlaceholder">perro</div>
-                        <button type="button" class="btn btn-primary circulo" id="liveAlertBtn">PHOTO</button>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td scope="row"><a href="aboutMe.html" class="btn btn-primary flexbox">HOW AM I</a></td>
-                    <td></td>
-                    <td><a href="experience.html" class="btn btn-primary flexbox">WORK EXPERIENCE</a></td>
+                    <td scope="row"><a href="aboutMe.html" class="btn flexbox">HOW AM I</a></td>
+                    <td><a href="experience.html" class="btn flexbox">WORK EXPERIENCE</a></td>
                 </tr>
             </tbody>
         </table>
